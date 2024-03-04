@@ -1,123 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karoz Rebaz Mohammed</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-header {
-    background-color: #000a7b; /* Blue header */
-    color: #ffffff;
-    padding: 20px 0;
-}
-header h1 {
-    margin: 0;
-}
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-header nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-header nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-}
-.section {
-    padding: 60px 0;
-    text-align: center;
-}
-.profile-pic {
-    margin-bottom: 40px;
-}
-.profile-pic img {
-    width: 200px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 50%;
-}
-.about-content h2 {
-    color: #000000; /* Dark gray text */
-}
-.about-content p {
-    color: #666; /* Medium gray text */
-}
-.project {
-    margin-bottom: 40px;
-}
-footer {
-    background-color: #000a7b; /* Blue footer */
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-}
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>karoz Rebaz Mohammed</title>
+    <!-- Internal CSS styles -->
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s, color 0.5s; /* Transition for smooth dark mode switch */
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto; /* Center the container */
+            padding: 0 15px; /* Add padding to match the header's alignment */
+        }
+        header {
+            background-color: #000a7b; /* Blue header */
+            color: #ffffff;
+            padding: 20px 0;
+            position: relative; /* Position for the dark mode button */
+        }
+        header h1 {
+            margin: 0;
+            padding: 0 15px; /* Align title with body content */
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .profile-pic {
+            margin-bottom: 40px;
+        }
+        .profile-pic img {
+            width: 200px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 50%;
+        }
+        .about-content h2, .project h2, #contact h2 {
+            color: #000000; /* Dark gray text */
+        }
+        .about-content p, .project p, #contact p {
+            color: #666; /* Medium gray text */
+        }
+        .project {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #000a7b; /* Blue footer */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .student {
+            font-size: 14px; /* Adjust the size as needed */
+            color: #fff; /* Grey color */
+        }
+        /* Dark mode button styles */
+        .dark-mode-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            outline: none;
+        }
 
-.student {
-    font-size: 14px; /* Adjust the size as needed */
-    color: #fff; /* Grey color */
-}
-</style>
+        .dark-mode-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* Dark mode styles */
+        .dark-mode {
+            background-color: #000;
+            color: #fff; /* Default text color for dark mode */
+        }
+
+        .dark-mode header {
+            background-color: #222; /* Darker header background */
+        }
+
+        .dark-mode .student {
+            color: #ddd; /* Light grey text for student class */
+        }
+
+        /* Specific styles for about content in dark mode */
+        .dark-mode .about-content h2,
+        .dark-mode .about-content p {
+            color: #fff; /* White text color for about content */
+        }
+
+        /* Specific styles for contact section in dark mode */
+        .dark-mode #contact h2,
+        .dark-mode #contact p {
+            color: #fff; /* White text color for contact section */
+        }
+    </style>
 </head>
 <body>
-<header>
-    <div class="container">
-        <h1>Karoz Rebaz Mohammed <span class="student">  <br>    Software Engineering Student</span></h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <header>
+        <div class="container">
+            <h1>karoz Rebaz Mohammed <span class="student"> <br> Software Engineering Student</span></h1>
+            <!-- Dark mode button -->
+            <button class="dark-mode-btn" onclick="toggleDarkMode()">
+                Light Mode
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<section id="about" class="section">
-    <div class="container">
-        <div class="profile-pic">
-            <a href="https://ibb.co/V3CZWcX"><img src="https://i.ibb.co/zN2YhTK/1bb.jpg" alt="1bb" border="0"></a>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="profile-pic">
+                <a href="https://ibb.co/V3CZWcX"><img src="https://i.ibb.co/zN2YhTK/1bb.jpg" alt="1bb" border="0"></a>
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I am a software engineering student in Qaiwan International University, I'm passionate about technology and eager to learn and grow in the field of Software Engineering. I enjoy working on various projects and exploring new coding languages.</p>
+            </div>
         </div>
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>I am a software engineering student in Qaiwan International University, Im passionate about technology and eager to learn and grow in the field of Software engineering. I enjoy working on various projects and exploring new coding languages.</p>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>software development poster</p>
+                <a href="https://ibb.co/nzzwW79"><img src="https://i.ibb.co/6ggydHz/software-developement-poster-2.jpg" alt="software-developement-poster-2" border="0"></a>
+                <a href="https://beige-fleur-71.tiiny.site/"><br>project in PDF form</a>
+            </div>
+            <!-- Project 2 with a video slot -->
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>TIS visit to korek telecom company </p>
+                <!-- Embed YouTube video using iframe -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/egu_nbqq17g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-    </div>
-</section>
-<section id="projects" class="section">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>software development poster </p>
-            <!-- Add image -->
-            <a href="https://ibb.co/nzzwW79"><img src="https://i.ibb.co/6ggydHz/software-developement-poster-2.jpg" alt="software-developement-poster-2" border="0"></a>
-            <!-- Add file -->
-            <a href="https://beige-fleur-71.tiiny.site/"><br>project in PDF form</a>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: krqiu230112@uniq.edu.iq </p>
+            <p>Phone: +9647702658349</p>
         </div>
-        <!-- Add more projects as needed -->
-    </div>
-</section>
-<section id="contact" class="section">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <p>Email: krqiu230112@uniq.edu.iq </p>
-        <p>Phone: +9647702658349</p>
-    </div>
-</section>
-<footer>
-    <div class="container">
-        <p>&copy;2024 Portfolio</p>
-    </div>
-</footer>
+    </section>
+
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+            var darkModeBtn = document.querySelector('.dark-mode-btn');
+            if (body.classList.contains('dark-mode')) {
+                darkModeBtn.innerHTML = 'Light Mode';
+            } else {
+                darkModeBtn.innerHTML = 'Dark Mode';
+            }
+        }
+    </script>
 </body>
 </html>
