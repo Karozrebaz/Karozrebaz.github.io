@@ -1,264 +1,222 @@
-img,
-iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .container {
-    width: 95%;
-  }
-
-  header nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .profile-pic img {
-    width: 100px;
-  }
-
-  .section {
-    padding: 30px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .dark-mode-btn {
-    position: relative;
-    top: 0;
-    right: 0;
-    margin: 10px;
-  }
-
-  header h1 {
-    font-size: 1.5em;
-  }
-
-  header nav ul li {
-    margin-left: 10px;
-  }
-}
-
 /* General styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  transition: background-color 0.5s, color 0.5s;
-}
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-header {
-  background-color: #000a7b;
-  color: #ffffff;
-  padding: 20px 0;
-  position: relative;
-}
-header h1 {
-  margin: 0;
-  padding: 0 15px;
-}
-header nav ul {
-  list-style: none;
-  padding: 0;
-}
-header nav ul li {
-  display: inline;
-  margin-left: 20px;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
-}
-.section {
-  padding: 60px 0;
-  text-align: center;
-}
-.profile-pic {
-  margin-bottom: 40px;
-}
-.profile-pic img {
-  width: 350px;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: #000a7b 1px 1px 15px 1px;
-}
-.about-content h2,
-.project h2,
-#contact h2 {
-  color: #000000;
-}
-.about-content p,
-.project p,
-#contact p {
-  color: #666;
-}
-.project {
-  margin-bottom: 40px;
-}
-footer {
-  background-color: #000a7b;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px 0;
-}
-.student {
-  font-size: 14px;
-  color: #fff;
-}
-
-.poster,
-.video {
-  box-shadow: #000a7b 1px 1px 15px 1px;
-}
-
-#contact .spi {
-  color: #fff;
-}
-
-.toTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: inline-block;
-  background-color: #000a7b;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-size: 20px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.toTopBtn:hover {
-  background-color: #0056b3;
-}
-
-.burger-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.burger-menu div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-@media (max-width: 768px) {
-  .burger-menu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 20;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
   }
-
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  header {
+    background-color: #000a7b;
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+  }
+  header h1 {
+    margin: 0;
+    padding: 0 15px;
+  }
   header nav ul {
-    display: none;
-    position: absolute;
-    width: 100%;
-    top: 58px;
-    left: 0;
-    background: #000a7b;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    list-style: none;
     padding: 0;
   }
-
   header nav ul li {
-    display: block;
-    text-align: center;
-    width: 100%;
+    display: inline;
+    margin-left: 20px;
   }
-
   header nav ul li a {
-    display: block;
-    padding: 15px;
-    border-bottom: 1px solid #ffffff50;
+    text-decoration: none;
+    color: #ffffff;
   }
-}
-
-/* Dark mode styles */
-.dark-mode {
-  background-color: #000;
-  color: #fff;
-}
-
-.dark-mode header,
-.dark-mode footer {
-  background-color: #000a7b;
-}
-
-.dark-mode .student,
-.dark-mode .about-content h2,
-.dark-mode .about-content p,
-.dark-mode #contact h2,
-.dark-mode #contact p {
-  color: #ddd;
-}
-
-/* Video Wrapper for 16:9 Aspect Ratio */
-.video-wrapper {
-    position: relative;
-    padding-top: 56.25%; /* Aspect Ratio (9/16) * 100% */
-    height: 0;
+  .section {
+    padding: 60px 0;
+    text-align: center;
   }
-  
-  .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  .profile-pic {
+    margin-bottom: 40px;
   }
-  
-  /* Dark mode button styles */
-  .dark-mode-btn {
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    background-color: transparent;
+  .profile-pic img {
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: #000a7b 1px 1px 15px 1px;
+  }
+  .about-content h2,
+  .project h2,
+  #contact h2 {
+    color: #000000;
+  }
+  .about-content p,
+  .project p,
+  #contact p {
+    color: #666;
+  }
+  .project {
+    margin-bottom: 40px;
+  }
+  footer {
+    background-color: #000a7b;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .student {
+    font-size: 14px;
     color: #fff;
-    border: none;
+  }
+  
+  .poster,
+  .video {
+    box-shadow: #000a7b 1px 1px 15px 1px;
+  }
+  
+  #contact .spi {
+    color: #fff;
+  }
+  
+  .toTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    background-color: #000a7b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
     cursor: pointer;
-    font-size: 16px;
-    outline: none;
+    text-decoration: none;
   }
   
-  .dark-mode-btn:hover {
-    text-decoration: underline;
+  .toTopBtn:hover {
+    background-color: #0056b3;
   }
   
-  /* Apply dark mode specific styles */
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  @media (max-width: 768px) {
+    .burger-menu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 20;
+    }
+  
+    header nav ul {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 58px;
+      left: 0;
+      background: #000a7b;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+  
+    header nav ul li {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  
+    header nav ul li a {
+      display: block;
+      padding: 15px;
+      border-bottom: 1px solid #ffffff50;
+    }
+  }
+  
+  /* Dark mode styles */
   .dark-mode {
     background-color: #000;
-    color: #fff; /* Default text color for dark mode */
+    color: #fff;
   }
   
-  .dark-mode header, .dark-mode footer {
-    background-color: #000a7b; /* Darker header and footer background for dark mode */
+  .dark-mode header,
+  .dark-mode footer {
+    background-color: #000a7b;
   }
   
-  .dark-mode .student {
-    color: #ddd; /* Lighter text color for 'student' class in dark mode */
+  .dark-mode .student,
+  .dark-mode .about-content h2,
+  .dark-mode .about-content p,
+  .dark-mode #contact h2,
+  .dark-mode #contact p {
+    color: #ddd;
   }
   
-  /* Styles for about content in dark mode */
-  .dark-mode .about-content h2, .dark-mode .about-content p {
-    color: #fff; /* White text color for about content in dark mode */
-  }
+  /* Video Wrapper for 16:9 Aspect Ratio */
+  .video-wrapper {
+      position: relative;
+      padding-top: 56.25%; /* Aspect Ratio (9/16) * 100% */
+      height: 0;
+    }
+    
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    /* Dark mode button styles */
+    .dark-mode-btn {
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      outline: none;
+    }
+    
+    .dark-mode-btn:hover {
+      text-decoration: underline;
+    }
+    
+    /* Apply dark mode specific styles */
+    .dark-mode {
+      background-color: #000;
+      color: #fff; /* Default text color for dark mode */
+    }
+    
+    .dark-mode header, .dark-mode footer {
+      background-color: #000a7b; /* Darker header and footer background for dark mode */
+    }
+    
+    .dark-mode .student {
+      color: #ddd; /* Lighter text color for 'student' class in dark mode */
+    }
+    
+    /* Styles for about content in dark mode */
+    .dark-mode .about-content h2, .dark-mode .about-content p {
+      color: #fff; /* White text color for about content in dark mode */
+    }
+    
+    /* Styles for contact section in dark mode */
+    .dark-mode #contact .spi {
+      color: #fff; /* White text color for contact info in dark mode */
+    }
   
-  /* Styles for contact section in dark mode */
-  .dark-mode #contact .spi {
-    color: #fff; /* White text color for contact info in dark mode */
-  }
   
