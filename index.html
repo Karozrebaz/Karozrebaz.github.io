@@ -75,7 +75,122 @@
       <div class="project">
         <h3>Project 5</h3>
         <p>design thinking</p>
-        
+        <iframe src="KAROZREBAZ.pdf" style="width:800px; height:600px;box-shadow: #0007ab 1px 1px 15px 1px;" frameborder="0" ></iframe>
+      </div>
+    </div>
+  </section>
+  <a href="#" class="toTopBtn">&#8679;</a>
+  <footer id="contact" class="section">
+    <div class="container">
+      <h2 class="spi">Contact Me</h2>
+      <p class="spi">Email: krqiu230112@uniq.edu.iq</p>
+      <p class="spi">Phone: +9647702658349</p>
+    </div>
+  </footer>
+  <script>
+    function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+      var darkModeBtn = document.querySelector(".dark-mode-btn");
+      if (body.classList.contains("dark-mode")) {
+        darkModeBtn.innerHTML = "Light Mode";
+      } else {
+        darkModeBtn.innerHTML = "Dark Mode";
+      }
+    }
+    document.querySelector(".toTopBtn").addEventListener("click", function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    function toggleMenu() {
+      var menu = document.querySelector("header nav ul");
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>
+        Karoz Rebaz Mohammed
+        <span class="student"><br />Software Engineering Student</span>
+      </h1>
+      <button class="dark-mode-btn" onclick="toggleDarkMode()">Light Mode</button>
+      <div class="burger-menu" onclick="toggleMenu()">
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="about" class="section">
+    <div class="container">
+      <div class="profile-pic">
+        <a href="https://ibb.co/V3CZWcX"><img src="https://i.ibb.co/zN2YhTK/1bb.jpg" alt="1bb" border="0"/></a>
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          I am a software engineering student in Qaiwan International
+          University, I'm passionate about technology and eager to learn and
+          grow in the field of Software Engineering. I enjoy working on
+          various projects and exploring new coding languages.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>software development poster</p>
+        <a href="https://ibb.co/nzzwW79"><img class="poster" src="https://i.ibb.co/6ggydHz/software-developement-poster-2.jpg" alt="software-developement-poster-2" border="0"/></a>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>TIS visit to korek telecom company</p>
+        <div class="video-wrapper">
+          <iframe class="video" width="280" height="1" src="https://www.youtube.com/embed/egu_nbqq17g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="project">
+        <h3>Project 3</h3>
+        <p>korek visit report</p>
+        <iframe src="KAYZISTHEBEST.pdf" style="width:800px; height:600px;box-shadow: #0007ab 1px 1px 15px 1px" frameborder="0"></iframe>
+      </div>
+
+      
+      </div>
+      <div class="project">
+        <h3>Project 4</h3>
+        <p>industrial talk report</p>
+        <iframe src="KAYZISTHEBEST2.pdf" style="width:800px; height:600px;box-shadow: #0007ab 1px 1px 15px 1px;" frameborder="0" ></iframe>
+      </div>
+      </div>
+      <div class="project">
+        <h3>Project 5</h3>
+        <p>design thinking</p>
+        <iframe src="KAROZREBAZ.pdf" style="width:800px; height:600px;box-shadow: #0007ab 1px 1px 15px 1px;" frameborder="0" ></iframe>
       </div>
     </div>
   </section>
