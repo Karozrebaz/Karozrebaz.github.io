@@ -77,6 +77,29 @@ body {
   #contact .spi {
     color: #fff;
   }
+
+
+  /* Dark mode button styles */
+.dark-mode-btn {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #010a6b; /* Darker background color */
+  color: #fff; /* Text color */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px; /* Add padding for better spacing */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  outline: none;
+}
+
+.dark-mode-btn:hover {
+  background-color: #555; /* Darken button on hover */
+}
+
+
   
   .toTopBtn {
     position: fixed;
